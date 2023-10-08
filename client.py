@@ -46,7 +46,7 @@ def client(client_id):
         with open(f"Client{client_id}.txt", "w") as f:
             e_line = f"Client {client_id}: Connection to the server was forcibly closed."
             print(e_line)
-            f.write(e_line)
+            f.write(e_line + '\n')
     except KeyboardInterrupt:
         pass
     finally:

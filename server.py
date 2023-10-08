@@ -106,7 +106,9 @@ def handle_client(client_socket):
             system_clock += 1
             generate_and_send_problem(client_socket)
     except Exception as e:
-        print(f"Error: {e}")
+        e_line = f"Error: {e}"
+        print(e_line)
+        f.write(e_line + '\n')
     finally:
         client_socket.close()
 
