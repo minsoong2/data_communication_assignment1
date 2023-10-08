@@ -7,6 +7,7 @@ ip = '127.0.0.1'
 port = 8888
 system_clock = 0
 total_sum = 0
+f = open("Server.txt", "w")
 
 
 def update_system_clock():
@@ -97,7 +98,8 @@ def main():
     server.bind((ip, port))
     server.listen(4)
 
-    print("Server is listening...")
+    listen = "Server is listening..."
+    f.write(listen, '\n')
 
     threads = []
     clock_thread = threading.Thread(target=update_system_clock)
@@ -114,9 +116,12 @@ def main():
     for thread in threads:
         thread.join()
 
-    print("total_sum:", round(total_sum, 6))
-    print("time:", system_clock)
+    print_total_sum = f"total_sum: {round(total_sum, 6)}"
+    print_system_clock = f"time: {system_clock}"
+    f.write(print_total_sum, '\n')
+    f.write(print_system_clock, '\n')
     server.close()
+    f.write("Server close...")
 
 
 if __name__ == "__main__":

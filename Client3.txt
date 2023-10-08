@@ -1,0 +1,4 @@
+Client 3: Received problem: 47 - 12 - 6, Client 3: Solved problem: 47 - 12 - 6 = 29
+Client 3: Received problem: 15 * 51 + 12, Client 3: Solved problem: 15 * 51 + 12 = 777
+Client 3: Received problem: 15 - 26 * 51, Client 3: Solved problem: 15 - 26 * 51 = -1311
+Client 3: Received problem: 28 * 15 + 61, Client 3: Solved problem: 28 * 15 + 61 = 481
