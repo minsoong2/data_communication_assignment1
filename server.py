@@ -3,6 +3,7 @@ import threading
 import random
 import time
 
+
 ip = '127.0.0.1'
 port = 8888
 system_clock = 0
@@ -38,24 +39,33 @@ def generate_and_send_problem(client_socket):
     while system_clock < 30:
         problem, correct_answer = generate_problem()
         client_socket.send(problem.encode())
+        f.write(f"System Clock {system_clock}s: Send problem to Client{client_socket} : {problem}" + '\n')
 
         if isinstance(correct_answer, int):
             response = float(client_socket.recv(1024).decode())
 
             if response == correct_answer:
-                print(
-                    f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered correctly: {problem} = {response}")
+                c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered correctly: {problem} = {response}"
+                print(c_answer)
+                f.write(c_answer + '\n')
                 time.sleep(random.randint(1, 5))
             else:
-                print(
-                    f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response}. Repeating problem.")
+                c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response}. Repeating problem."
+                print(c_answer)
+                f.write(c_answer + '\n')
                 time.sleep(1)
+
                 client_socket.send(problem.encode())
+                f.write(f"System Clock {system_clock}s: Send problem to Client{client_socket} : {problem}" + '\n')
                 response = client_socket.recv(1024).decode()
                 if response == correct_answer:
-                    print(f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam success!!!")
+                    c_answer = f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam success!!!"
+                    print(c_answer)
+                    f.write(c_answer + '\n')
                 else:
-                    print(f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam fail!!!")
+                    c_answer = f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam fail!!!"
+                    print(c_answer)
+                    f.write(c_answer + '\n')
 
             total_sum += response
 
@@ -64,19 +74,27 @@ def generate_and_send_problem(client_socket):
             correct_answer = round(correct_answer, 6)
 
             if response == correct_answer:
-                print(
-                    f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered correctly: {problem} = {response}")
+                c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered correctly: {problem} = {response}"
+                print(c_answer)
+                f.write(c_answer + '\n')
                 time.sleep(random.randint(1, 5))
             else:
-                print(
-                    f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response}. Repeating problem.")
+                c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response}. Repeating problem."
+                print(c_answer)
+                f.write(c_answer + '\n')
                 time.sleep(1)
+
                 client_socket.send(problem.encode())
-                response = float(client_socket.recv(1024).decode())
+                f.write(f"System Clock {system_clock}s: Send problem to Client{client_socket} : {problem}" + '\n')
+                response = client_socket.recv(1024).decode()
                 if response == correct_answer:
-                    print(f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam success!!!")
+                    c_answer = f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam success!!!"
+                    print(c_answer)
+                    f.write(c_answer + '\n')
                 else:
-                    print(f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam fail!!!")
+                    c_answer = f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam fail!!!"
+                    print(c_answer)
+                    f.write(c_answer + '\n')
 
             total_sum += response
 
@@ -99,7 +117,8 @@ def main():
     server.listen(4)
 
     listen = "Server is listening..."
-    f.write(listen, '\n')
+    print(listen)
+    f.write(listen + '\n')
 
     threads = []
     clock_thread = threading.Thread(target=update_system_clock)
@@ -108,7 +127,9 @@ def main():
 
     for _ in range(4):
         client_socket, client_address = server.accept()
-        print(f"Accepted connection from {client_address}")
+        accept = f"Accepted connection from {client_address}"
+        print(accept)
+        f.write(accept + '\n')
         client_handler = threading.Thread(target=handle_client, args=(client_socket,))
         client_handler.start()
         threads.append(client_handler)
@@ -117,11 +138,14 @@ def main():
         thread.join()
 
     print_total_sum = f"total_sum: {round(total_sum, 6)}"
-    print_system_clock = f"time: {system_clock}"
-    f.write(print_total_sum, '\n')
-    f.write(print_system_clock, '\n')
+    print_system_clock = f"end_time: {system_clock}"
+    print(print_total_sum)
+    print(print_system_clock)
+    f.write(print_total_sum + '\n')
+    f.write(print_system_clock + '\n')
     server.close()
-    f.write("Server close...")
+    print("Server closed...")
+    f.write("Server closed...")
 
 
 if __name__ == "__main__":
