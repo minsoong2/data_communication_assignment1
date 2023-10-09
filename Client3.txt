@@ -1,4 +1,4 @@
-Client 3: Received problem: 33 + 68 * 60, Client 3: Solved problem: 33 + 68 * 60 = 4113
-Client 3: Received problem: 15 + 0 - 59, Client 3: Solved problem: 15 + 0 - 59 = -44
-Client 3: Received problem: 72 * 17 + 28, Client 3: Solved problem: 72 * 17 + 28 = 1252
-Client 3: Received problem: 10 + 94 - 31, Client 3: Solved problem: 10 + 94 - 31 = 73
+Client 3: Received problem: 92 * 3 / 16, Client 3: Solved problem: 92 * 3 / 16 = 17.25
+Client 3: Received problem: 19 + 76 / 51, Client 3: Solved problem: 19 + 76 / 51 = 20.490196
+Client 3: Received problem: 32 * 38 / 92, Client 3: Solved problem: 32 * 38 / 92 = 13.217391
+Client 3: Received problem: 80 * 82 / 84, Client 3: Solved problem: 80 * 82 / 84 = 78.095238

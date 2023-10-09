@@ -42,7 +42,7 @@ def generate_and_send_problem(client_socket):
         f.write(f"System Clock {system_clock}s: Send problem to Client{client_socket} : {problem}" + '\n')
 
         if isinstance(correct_answer, int):
-            response = float(client_socket.recv(1024).decode())
+            response = int(client_socket.recv(1024).decode())
 
             if response == correct_answer:
                 c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered correctly: {problem} = {response}"
@@ -50,14 +50,14 @@ def generate_and_send_problem(client_socket):
                 f.write(c_answer + '\n')
                 time.sleep(random.randint(1, 5))
             else:
-                c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response}. Repeating problem."
+                c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response} Repeating problem."
                 print(c_answer)
                 f.write(c_answer + '\n')
                 time.sleep(1)
 
                 client_socket.send(problem.encode())
                 f.write(f"System Clock {system_clock}s: Send problem to Client{client_socket} : {problem}" + '\n')
-                response = client_socket.recv(1024).decode()
+                response = int(client_socket.recv(1024).decode())
                 if response == correct_answer:
                     c_answer = f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam success!!!"
                     print(c_answer)
@@ -79,14 +79,14 @@ def generate_and_send_problem(client_socket):
                 f.write(c_answer + '\n')
                 time.sleep(random.randint(1, 5))
             else:
-                c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response}. Repeating problem."
+                c_answer = f"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response} Repeating problem."
                 print(c_answer)
                 f.write(c_answer + '\n')
                 time.sleep(1)
 
                 client_socket.send(problem.encode())
                 f.write(f"System Clock {system_clock}s: Send problem to Client{client_socket} : {problem}" + '\n')
-                response = client_socket.recv(1024).decode()
+                response = float(client_socket.recv(1024).decode())
                 if response == correct_answer:
                     c_answer = f"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam success!!!"
                     print(c_answer)
@@ -117,6 +117,7 @@ def main():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((ip, port))
     server.listen(4)
+    server.settimeout(1)
 
     listen = "Server is listening..."
     print(listen)
@@ -127,14 +128,22 @@ def main():
     clock_thread.daemon = True
     clock_thread.start()
 
-    for _ in range(4):
-        client_socket, client_address = server.accept()
-        accept = f"Accepted connection from {client_address}"
-        print(accept)
-        f.write(accept + '\n')
-        client_handler = threading.Thread(target=handle_client, args=(client_socket,))
-        client_handler.start()
-        threads.append(client_handler)
+    client_count = 0
+
+    while system_clock < 30:
+        if system_clock >= 30:
+            break
+        try:
+            client_socket, client_address = server.accept()
+            accept = f"Accepted connection from {client_address}"
+            print(accept)
+            f.write(accept + '\n')
+            client_handler = threading.Thread(target=handle_client, args=(client_socket,))
+            client_handler.start()
+            threads.append(client_handler)
+            client_count += 1
+        except socket.timeout:
+            pass
 
     for thread in threads:
         thread.join()
@@ -148,6 +157,9 @@ def main():
     server.close()
     print("Server closed...")
     f.write("Server closed...")
+    if client_count == 0:
+        print("No clients connected during the 30 seconds.")
+        f.write("No clients connected during the 30 seconds.")
 
 
 if __name__ == "__main__":

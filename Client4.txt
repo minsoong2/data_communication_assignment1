@@ -1,5 +1,3 @@
-Client 4: Received problem: 44 / 60 / 77, Client 4: Solved problem: 44 / 60 / 77 = 0.009524
-Client 4: Received problem: 72 + 74 / 48, Client 4: Solved problem: 72 + 74 / 48 = 73.541667
-Client 4: Received problem: 44 + 8 - 20, Client 4: Solved problem: 44 + 8 - 20 = 32
-Client 4: Received problem: 83 - 87 * 23, Client 4: Solved problem: 83 - 87 * 23 = -1918
-Client 4: Received problem: 36 * 55 / 53, Client 4: Solved problem: 36 * 55 / 53 = 37.358491
+Client 4: Received problem: 7 / 44 - 96, Client 4: Solved problem: 7 / 44 - 96 = -95.840909
+Client 4: Received problem: 62 / 14 + 4, Client 4: Solved problem: 62 / 14 + 4 = 8.428571
+Client 4: Received problem: 13 + 4 - 61, Client 4: Solved problem: 13 + 4 - 61 = -44

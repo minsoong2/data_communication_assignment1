@@ -1,4 +1,5 @@
-Client 2: Received problem: 16 * 84 / 79, Client 2: Solved problem: 16 * 84 / 79 = 17.012658
-Client 2: Received problem: 100 + 33 + 13, Client 2: Solved problem: 100 + 33 + 13 = 146
-Client 2: Received problem: 65 - 59 - 21, Client 2: Solved problem: 65 - 59 - 21 = -15
-Client 2: Received problem: 80 / 94 / 8, Client 2: Solved problem: 80 / 94 / 8 = 0.106383
+Client 2: Received problem: 35 * 20 - 92, Client 2: Solved problem: 35 * 20 - 92 = 608
+Client 2: Received problem: 79 - 73 * 22, Client 2: Solved problem: 79 - 73 * 22 = -1527
+Client 2: Received problem: 37 * 15 / 64, Client 2: Solved problem: 37 * 15 / 64 = 8.671875
+Client 2: Received problem: 88 - 96 + 28, Client 2: Solved problem: 88 - 96 + 28 = 20
+Client 2: Received problem: 87 - 59 - 66, Client 2: Solved problem: 87 - 59 - 66 = -38
