@@ -7,13 +7,14 @@ import time
 ip = '127.0.0.1'
 port = 8888
 system_clock = 0
+server_operating_time = 600
 total_sum = 0
 f = open("Server.txt", "w")
 
 
 def update_system_clock():
     global system_clock
-    while system_clock < 600:
+    while system_clock < server_operating_time:
         time.sleep(1)
         system_clock += 1
 
@@ -36,7 +37,7 @@ def generate_problem():
 
 def generate_and_send_problem(client_socket):
     global system_clock, total_sum
-    while system_clock < 600:
+    while system_clock < server_operating_time:
         problem, correct_answer = generate_problem()
         client_socket.send(problem.encode())
         f.write(f"System Clock {system_clock}s: Send problem to Client{client_socket} : {problem}" + '\n')
@@ -102,7 +103,7 @@ def generate_and_send_problem(client_socket):
 def handle_client(client_socket):
     global system_clock
     try:
-        while system_clock < 600:
+        while system_clock < server_operating_time:
             system_clock += 1
             generate_and_send_problem(client_socket)
     except Exception as e:
@@ -130,8 +131,8 @@ def main():
 
     client_count = 0
 
-    while system_clock < 600:
-        if system_clock >= 600:
+    while system_clock < server_operating_time:
+        if system_clock >= server_operating_time:
             break
         try:
             client_socket, client_address = server.accept()
