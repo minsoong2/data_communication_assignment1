@@ -1,10 +1,1 @@
-Client 3: Received problem: 11 - 88 / 88, Client 3: Solved problem: 11 - 88 / 88 = 10.0
-Client 3: Received problem: 59 * 97 / 39, Client 3: Solved problem: 59 * 97 / 39 = 146.74359
-Client 3: Received problem: 26 * 50 / 90, Client 3: Solved problem: 26 * 50 / 90 = 14.444444
-Client 3: Received problem: 34 * 16 - 34, Client 3: Solved problem: 34 * 16 - 34 = 510
-Client 3: Received problem: 64 / 57 / 76, Client 3: Solved problem: 64 / 57 / 76 = 0.014774
-Client 3: Received problem: 25 - 37 + 91, Client 3: Solved problem: 25 - 37 + 91 = 79
-Client 3: Received problem: 87 / 9 * 91, Client 3: Solved problem: 87 / 9 * 91 = 879.666667
-Client 3: Received problem: 30 / 83 - 0, Client 3: Solved problem: 30 / 83 - 0 = 0.361446
-Client 3: Received problem: 5 + 82 / 15, Client 3: Solved problem: 5 + 82 / 15 = 10.466667
-Client 3: Received problem: 55 * 27 / 67, Client 3: Solved problem: 55 * 27 / 67 = 22.164179
+Client 3: Received problem: 80 * 66 / 49, Client 3: Solved problem: 80 * 66 / 49 = 107.755102

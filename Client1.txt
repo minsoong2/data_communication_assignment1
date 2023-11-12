@@ -1,8 +1,0 @@
-Client 1: Received problem: 77 + 99 - 1, Client 1: Solved problem: 77 + 99 - 1 = 175
-Client 1: Received problem: 27 + 65 * 44, Client 1: Solved problem: 27 + 65 * 44 = 2887
-Client 1: Received problem: 20 - 53 + 100, Client 1: Solved problem: 20 - 53 + 100 = 67
-Client 1: Received problem: 73 + 95 * 2, Client 1: Solved problem: 73 + 95 * 2 = 263
-Client 1: Received problem: 72 - 14 + 91, Client 1: Solved problem: 72 - 14 + 91 = 149
-Client 1: Received problem: 78 - 87 - 61, Client 1: Solved problem: 78 - 87 - 61 = -70
-Client 1: Received problem: 74 * 26 * 40, Client 1: Solved problem: 74 * 26 * 40 = 76960
-Client 1: Received problem: 74 - 0 - 17, Client 1: Solved problem: 74 - 0 - 17 = 57

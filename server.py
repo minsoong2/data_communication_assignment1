@@ -8,7 +8,7 @@ ip = '127.0.0.1'
 port = 8888
 
 system_clock = 0
-server_operating_time = 60
+server_operating_time = 10
 total_sum = 0
 f = open("Server.txt", "w")
 

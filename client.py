@@ -50,6 +50,7 @@ def client(client_id):
     except KeyboardInterrupt:
         pass
     finally:
+        print(f"Client {client_id}: Connection closed")
         client_socket.close()
 
 

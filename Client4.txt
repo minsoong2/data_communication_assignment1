@@ -1,8 +1,1 @@
-Client 4: Received problem: 91 + 24 + 59, Client 4: Solved problem: 91 + 24 + 59 = 174
-Client 4: Received problem: 17 + 40 - 4, Client 4: Solved problem: 17 + 40 - 4 = 53
-Client 4: Received problem: 66 / 25 * 6, Client 4: Solved problem: 66 / 25 * 6 = 15.84
-Client 4: Received problem: 50 - 68 + 6, Client 4: Solved problem: 50 - 68 + 6 = -12
-Client 4: Received problem: 33 / 38 * 51, Client 4: Solved problem: 33 / 38 * 51 = 44.289474
-Client 4: Received problem: 8 * 9 + 56, Client 4: Solved problem: 8 * 9 + 56 = 128
-Client 4: Received problem: 29 / 79 + 29, Client 4: Solved problem: 29 / 79 + 29 = 29.367089
-Client 4: Received problem: 33 - 81 - 8, Client 4: Solved problem: 33 - 81 - 8 = -56
+Client 4: Received problem: 53 - 96 * 99, Client 4: Solved problem: 53 - 96 * 99 = -9451

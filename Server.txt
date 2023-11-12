@@ -1,78 +1,14 @@
 Server is listening...
-Accepted connection from ('127.0.0.1', 57444)
-System Clock 3s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 72 / 53 / 55
-Accepted connection from ('127.0.0.1', 57445)
-Accepted connection from ('127.0.0.1', 57446)
-System Clock 5s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 11 - 88 / 88
-System Clock 6s: Send problem to Client<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57446)> : 77 + 99 - 1
-System Clock 9s: Client ('127.0.0.1', 57444) answered correctly: 72 / 53 / 55 = 0.0247
-Accepted connection from ('127.0.0.1', 57447)
-System Clock 10s: Send problem to Client<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57447)> : 91 + 24 + 59
-System Clock 10s: Client ('127.0.0.1', 57446) answered correctly: 77 + 99 - 1 = 175
-System Clock 11s: Send problem to Client<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57446)> : 27 + 65 * 44
-System Clock 12s: Client ('127.0.0.1', 57445) answered correctly: 11 - 88 / 88 = 10.0
-System Clock 13s: Client ('127.0.0.1', 57447) answered correctly: 91 + 24 + 59 = 174
-System Clock 14s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 26 + 93 * 97
-System Clock 15s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 59 * 97 / 39
-System Clock 15s: Client ('127.0.0.1', 57446) answered correctly: 27 + 65 * 44 = 2887
-System Clock 16s: Send problem to Client<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57447)> : 17 + 40 - 4
-System Clock 16s: Client ('127.0.0.1', 57445) answered correctly: 59 * 97 / 39 = 146.74359
-System Clock 18s: Client ('127.0.0.1', 57444) answered correctly: 26 + 93 * 97 = 9047
-System Clock 18s: Client ('127.0.0.1', 57447) answered correctly: 17 + 40 - 4 = 53
-System Clock 19s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 56 / 41 * 73
-System Clock 20s: Send problem to Client<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57446)> : 20 - 53 + 100
-System Clock 20s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 26 * 50 / 90
-System Clock 20s: Send problem to Client<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57447)> : 66 / 25 * 6
-System Clock 21s: Client ('127.0.0.1', 57444) answered correctly: 56 / 41 * 73 = 99.707317
-System Clock 23s: Client ('127.0.0.1', 57445) answered correctly: 26 * 50 / 90 = 14.444444
-System Clock 23s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 34 - 58 + 8
-System Clock 24s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 34 * 16 - 34
-System Clock 25s: Client ('127.0.0.1', 57446) answered correctly: 20 - 53 + 100 = 67
-System Clock 25s: Client ('127.0.0.1', 57447) answered correctly: 66 / 25 * 6 = 15.84
-System Clock 27s: Client ('127.0.0.1', 57445) answered correctly: 34 * 16 - 34 = 510
-System Clock 28s: Client ('127.0.0.1', 57444) answered correctly: 34 - 58 + 8 = -16
-System Clock 29s: Send problem to Client<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57447)> : 50 - 68 + 6
-System Clock 29s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 64 / 57 / 76
-System Clock 30s: Send problem to Client<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57446)> : 73 + 95 * 2
-System Clock 31s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 48 * 69 * 8
-System Clock 33s: Client ('127.0.0.1', 57447) answered correctly: 50 - 68 + 6 = -12
-System Clock 33s: Client ('127.0.0.1', 57445) answered correctly: 64 / 57 / 76 = 0.014774
-System Clock 33s: Client ('127.0.0.1', 57446) answered correctly: 73 + 95 * 2 = 263
-System Clock 34s: Send problem to Client<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57447)> : 33 / 38 * 51
-System Clock 34s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 25 - 37 + 91
-System Clock 35s: Send problem to Client<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57446)> : 72 - 14 + 91
-System Clock 35s: Client ('127.0.0.1', 57444) answered correctly: 48 * 69 * 8 = 26496
-System Clock 36s: Client ('127.0.0.1', 57447) answered correctly: 33 / 38 * 51 = 44.289474
-System Clock 36s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 49 / 22 / 4
-System Clock 37s: Client ('127.0.0.1', 57445) answered correctly: 25 - 37 + 91 = 79
-System Clock 39s: Client ('127.0.0.1', 57446) answered correctly: 72 - 14 + 91 = 149
-System Clock 40s: Client ('127.0.0.1', 57444) answered correctly: 49 / 22 / 4 = 0.556818
-System Clock 41s: Send problem to Client<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57446)> : 78 - 87 - 61
-System Clock 41s: Send problem to Client<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57447)> : 8 * 9 + 56
-System Clock 41s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 87 / 9 * 91
-System Clock 42s: Client ('127.0.0.1', 57446) answered correctly: 78 - 87 - 61 = -70
-System Clock 42s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 74 - 72 + 44
-System Clock 43s: Client ('127.0.0.1', 57445) answered correctly: 87 / 9 * 91 = 879.666667
-System Clock 45s: Client ('127.0.0.1', 57447) answered correctly: 8 * 9 + 56 = 128
-System Clock 46s: Send problem to Client<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57446)> : 74 * 26 * 40
-System Clock 46s: Client ('127.0.0.1', 57444) answered correctly: 74 - 72 + 44 = 46
-System Clock 46s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 30 / 83 - 0
-System Clock 47s: Client ('127.0.0.1', 57446) answered correctly: 74 * 26 * 40 = 76960
-System Clock 48s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 3 / 16 + 98
-System Clock 48s: Client ('127.0.0.1', 57445) answered correctly: 30 / 83 - 0 = 0.361446
-System Clock 49s: Send problem to Client<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57447)> : 29 / 79 + 29
-System Clock 50s: Client ('127.0.0.1', 57447) answered correctly: 29 / 79 + 29 = 29.367089
-System Clock 51s: Send problem to Client<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57446)> : 74 - 0 - 17
-System Clock 52s: Client ('127.0.0.1', 57444) answered correctly: 3 / 16 + 98 = 98.1875
-System Clock 52s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 5 + 82 / 15
-System Clock 55s: Send problem to Client<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57447)> : 33 - 81 - 8
-System Clock 55s: Send problem to Client<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57444)> : 55 + 18 - 28
-System Clock 56s: Client ('127.0.0.1', 57446) answered correctly: 74 - 0 - 17 = 57
-System Clock 56s: Client ('127.0.0.1', 57445) answered correctly: 5 + 82 / 15 = 10.466667
-System Clock 58s: Send problem to Client<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57445)> : 55 * 27 / 67
-System Clock 59s: Client ('127.0.0.1', 57445) answered correctly: 55 * 27 / 67 = 22.164179
-System Clock 60s: Client ('127.0.0.1', 57447) answered correctly: 33 - 81 - 8 = -56
-System Clock 60s: Client ('127.0.0.1', 57444) answered correctly: 55 + 18 - 28 = 45
-total_sum: 118353.834665
-end_time: 60
+Accepted connection from ('127.0.0.1', 64492)
+System Clock 3s: Send problem to Client<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 64492)> : 57 - 66 + 27
+Accepted connection from ('127.0.0.1', 64493)
+System Clock 6s: Send problem to Client<socket.socket fd=152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 64493)> : 80 * 66 / 49
+Accepted connection from ('127.0.0.1', 64494)
+Accepted connection from ('127.0.0.1', 64495)
+System Clock 9s: Send problem to Client<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 64494)> : 53 - 96 * 99
+System Clock 10s: Client ('127.0.0.1', 64492) answered correctly: 57 - 66 + 27 = 18
+System Clock 11s: Client ('127.0.0.1', 64493) answered correctly: 80 * 66 / 49 = 107.755102
+System Clock 11s: Client ('127.0.0.1', 64494) answered correctly: 53 - 96 * 99 = -9451
+total_sum: -9325.244898
+end_time: 11
 Server closed...
