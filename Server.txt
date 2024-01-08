@@ -1,14 +1,14 @@
 Server is listening...
-Accepted connection from ('127.0.0.1', 64492)
-System Clock 3s: Send problem to Client<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 64492)> : 57 - 66 + 27
-Accepted connection from ('127.0.0.1', 64493)
-System Clock 6s: Send problem to Client<socket.socket fd=152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 64493)> : 80 * 66 / 49
-Accepted connection from ('127.0.0.1', 64494)
-Accepted connection from ('127.0.0.1', 64495)
-System Clock 9s: Send problem to Client<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 64494)> : 53 - 96 * 99
-System Clock 10s: Client ('127.0.0.1', 64492) answered correctly: 57 - 66 + 27 = 18
-System Clock 11s: Client ('127.0.0.1', 64493) answered correctly: 80 * 66 / 49 = 107.755102
-System Clock 11s: Client ('127.0.0.1', 64494) answered correctly: 53 - 96 * 99 = -9451
-total_sum: -9325.244898
+Accepted connection from ('127.0.0.1', 57206)
+System Clock 3s: Send problem to Client<socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57206)> : 65 / 9 * 65
+Accepted connection from ('127.0.0.1', 57207)
+System Clock 5s: Send problem to Client<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57207)> : 92 / 63 / 94
+System Clock 5s: Client ('127.0.0.1', 57206) answered correctly: 65 / 9 * 65 = 469.444444
+Accepted connection from ('127.0.0.1', 57208)
+System Clock 7s: Send problem to Client<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 57208)> : 97 / 88 * 19
+System Clock 9s: Client ('127.0.0.1', 57207) answered correctly: 92 / 63 / 94 = 0.015535
+Accepted connection from ('127.0.0.1', 57209)
+System Clock 11s: Client ('127.0.0.1', 57208) answered correctly: 97 / 88 * 19 = 20.943182
+total_sum: 490.403161
 end_time: 11
 Server closed...

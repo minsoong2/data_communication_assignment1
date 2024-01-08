@@ -1,1 +1,1 @@
-Client 3: Received problem: 80 * 66 / 49, Client 3: Solved problem: 80 * 66 / 49 = 107.755102
+Client 3: Received problem: 65 / 9 * 65, Client 3: Solved problem: 65 / 9 * 65 = 469.444444

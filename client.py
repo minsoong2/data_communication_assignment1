@@ -13,6 +13,7 @@ server_port = 8888
 def client(client_id):
     time.sleep(random.randint(1, 5))
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    print(client_socket)
     client_socket.connect((server_ip, server_port))
     print(f"Client {client_id}: start!!")
 

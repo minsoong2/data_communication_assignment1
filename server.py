@@ -137,6 +137,7 @@ def main():
             break
         try:
             client_socket, client_address = server.accept()
+            print(client_socket)
             accept = f"Accepted connection from {client_address}"
             print(accept)
             f.write(accept + '\n')
