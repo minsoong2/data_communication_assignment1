@@ -1,0 +1,60 @@
+Server.py
+"Server is listening..."
+- Server socket이 생성되어 IP, PORT를 바인딩하고 client를 받아들일 준비가 된 상태를 의미합니다.
+
+"Accepted connection from {client_address}"
+- Server에서 {client_address}에서 온 client socket의 연결에 받아들인 것을 의미합니다.
+
+"System Clock {system_clock}s: Send problem to Client{client_socket} : {problem}"
+- 연결된 {client_socket}으로 생성된 문제인 {problem}을 전달하는 것을 의미합니다.
+
+"System Clock {system_clock}s: Client {client_socket.getpeername()} answered correctly: {problem} = {response}"
+- {client_socket}으로부터 {response}를 받아 어떤 문제에 해당 하는 답이며 정답임을 의미합니다.
+
+"System Clock {system_clock}s: Client {client_socket.getpeername()} answered incorrectly: {problem} = {response}. Repeating problem"
+- {client_socket}으로부터 {response}를 받았지만 오답인 경우에 어떤 문제에 해당하며 문제를 재전송하는 것을 의미합니다.
+
+"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam success!!!"
+- {client_socket}으로부터 재전송한 문제가 정답인 경우를 의미합니다.
+
+"System Clock {system_clock}s: {client_socket.getpeername()} : Re-exam fail!!!"
+- {client_socket}으로부터 재전송한 문제가 오답인 경우를 의미합니다.
+
+"Error: {e}"
+- handle_client() 함수 내에서 예외가 발생한 경우 해당 에러를 확인합니다.
+
+"total_sum: {round(total_sum, 6)}"
+- 모든 결과의 합을 도출해내기 위함이며 소수가 나오는 경우 6자리 까지만 계산을 했습니다.
+
+"end_time: {system_clock}"
+- 처음에 설정했던 시간대로 프로그램이 종료했는지 확인합니다.
+
+"Server closed..."
+- 할 일을 끝내고 서버를 종료시킵니다.
+
+"No clients connected during the during the {server_operation_time} seconds.")
+- 만약 서버 구동 시간 동안 client가 접속하지 않아 client_count가 0인 경우 출력합니다.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client.py
+"Client {client_id}: start!!"
+- {client_id}를 가지는 client가 server와 연결된 상태를 의미합니다.
+
+"Client {client_id}: Received problem: {problem}"
+- {client_id}를 가지는 client가 server로부터 문제 {problem}을 받은 상태입니다.
+
+"Client {client_id}: Solved problem: {problem} = {result}"
+- {client_id}를 가지는 client가 server로부터 받은 문제의 답이 int형인 경우에 문제와 답을 확인합니다.
+
+"Client {client_id}: Solved problem: {problem} = {result_f}"
+- {client_id}를 가지는 client가 server로부터 받은 문제의 답이 float형인 경우에 문제와 답을 확인합니다.
+
+"Client {client_id}: Connection to the server was closed"
+- {client_id}를 가지는 client가 역할을 끝마치고 server와의 연결이 끊어졌다고 알립니다.
+
+"Client {client_id}: Connection to the server was forcibly closed"
+- {client_id}를 가지는 client가 ConnectionResetError가 발생한 경우 server와의 연결이 강제로 끊어졌다고 알립니다.
+
+"Client {client_id} Error: {e}"
+- {client_id}를 가지는 client가 특정 에러가 발생하여 종료되었다고 알립니다.

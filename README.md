@@ -2,11 +2,33 @@
 
 ## 🌟Server-Client Random Calculation Matching Game Implementation
 
+This project involves the creation of a server-client architecture where the server issues random arithmetic problems to clients. Clients compute the solutions and respond back to the server.
+
+### 📘Program Components
+
+#### `Server.py`
+- **Server Socket**: Manages incoming connections from clients.
+- **Threads**:
+  - `system_clock update thread`: Responsible for updating the system clock.
+  - `handle_client thread`: Manages individual client connections.
+    - `accepted client socket`: Dedicated to the communication with the connected client.
+- **File I/O Descriptor**: Utilized for event logging and tracking client interactions.
+
+#### `Client.py`
+- **Client Socket**: Manages the connection to the server.
+- **Client Thread**: Handles the computation and communication from the client side.
+- **File I/O Descriptor**: Responsible for logging the operations performed by the client.
+
+### 📘Compilation Method
+
+The program is written in Python and does not require a traditional compilation process. To run the program, ensure that Python is installed on your system and use the following commands:
+
+
 ### 🚀Due Date
 - Submissions must be made via eCampus by **October 12th, 23:59**.
 
 ### 🚀Submission Format
-- Submit one file named `G<group_number>HW1.zip` (e.g., G1HW1.zip).
+- Submit one file named `G<group_number>HW1.zip` (e.g., GxHW1.zip).
 
 ### 🚀Simulation Environment and Components
 - Implement the experimental environment consisting of 4 clients and 1 server.
