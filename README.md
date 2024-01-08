@@ -4,6 +4,9 @@
 
 This project involves the creation of a server-client architecture where the server issues random arithmetic problems to clients. Clients compute the solutions and respond back to the server.
 
+### 📘Due Date
+- Submissions must be made via eCampus by **October 12th, 23:59**.
+
 ### 📘Program Components
 
 #### `Server.py`
@@ -22,10 +25,6 @@ This project involves the creation of a server-client architecture where the ser
 ### 📘Compilation Method
 
 The program is written in Python and does not require a traditional compilation process. To run the program, ensure that Python is installed on your system and use the following commands:
-
-
-### 🚀Due Date
-- Submissions must be made via eCampus by **October 12th, 23:59**.
 
 ### 🚀Submission Format
 - Submit one file named `G<group_number>HW1.zip` (e.g., GxHW1.zip).
