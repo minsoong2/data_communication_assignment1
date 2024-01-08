@@ -1,6 +1,6 @@
 # 💡 Data Communications Programming Assignment - Fall 2023
 
-## Server-Client Random Calculation Matching Game Implementation
+## 🌟Server-Client Random Calculation Matching Game Implementation
 
 ### 🚀Due Date
 - Submissions must be made via eCampus by **October 12th, 23:59**.
